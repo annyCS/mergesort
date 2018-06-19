@@ -6,6 +6,8 @@ import java.util.concurrent.RecursiveAction;
 
 public class MergeSort<T extends Comparable<T>> extends RecursiveAction {
 
+	private static final long serialVersionUID = 1L;
+	
 	public static int TH = 10;
 	private T[] array;
 	private int low;
@@ -40,7 +42,7 @@ public class MergeSort<T extends Comparable<T>> extends RecursiveAction {
 		if (array[mid - 1].compareTo(array[mid]) < 0) {
 			int totalLength = high - low;
 			int firstLength = mid - low;
-			T[] copy = (T[])new Comparable[totalLength];
+			T[] copy = (T[]) new Comparable[totalLength];
 			System.arraycopy(array, low, copy, 0, copy.length);
 			int p = 0;
 			int q = firstLength;
