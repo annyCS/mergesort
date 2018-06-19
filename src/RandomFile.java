@@ -2,7 +2,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Random;
 
-public class GenerateContestants {
+public class RandomFile {
     public static void main(String[] args) {
         try (PrintWriter pw = new PrintWriter("contestants.txt")) {
             // int nContestants = 10000000;

@@ -10,7 +10,7 @@ import java.util.concurrent.ForkJoinPool;
 
 public class Main {
 	private static Pair[] list;
-	private static String INPUT = "contestants3.txt";
+	private static String INPUT = "contestants.txt";
 	private static String OUTPUT = "output.txt";
 
 	public static void main(String[] args) {
